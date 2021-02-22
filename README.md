@@ -11,3 +11,13 @@ See http://wkhtmltopdf.org for updated documentation.
 wkhtmltopdf has its own dedicated repository for building and packaging.
 
 See https://github.com/wkhtmltopdf/packaging
+
+## Static library
+
+This fork enables building as a static library.
+The standard build process will produce a `libwkhtmltox.a` in /bin in addition to the `.so` and binaries.
+
+```bash
+qmake
+make -j $(nprocs)
+```
